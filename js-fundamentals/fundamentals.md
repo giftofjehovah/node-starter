@@ -37,7 +37,7 @@ We can also merge the variable declaration and assignment into a single line:
 ```js
 let firstName = 'Jonathan'
 
-console.log(firstName)
+console.log(firstName) // output: 'Jonathan'
 ```
 
 > In older scripts you may also find another keyword: `var` instead of `let`:
@@ -184,3 +184,116 @@ if (firstName === 'Jonathan') {
 We often have a need to perform similar actions many times in a row.
 
 Loops are a way to repeat the same part of code multiple times.
+
+### While Loops
+
+The while loop have the following syntax
+```js
+while (condition) {
+  // code
+  // loop body
+  // repeated action
+}
+```
+While the `condition` is `true`, the code from the loop body is executed
+
+For example:
+```js
+let i = 0
+while (i < 3) {
+  console.log(`the current i is ${i}`)
+  i++
+}
+// result:
+// the current i is 0
+// the current i is 1
+// the current i is 2
+```
+
+### For Loops
+
+The for loop have the following syntax
+```js
+for (begin; condition; step) {
+  // code
+  // loop body
+  // repeated action
+}
+```
+Example:
+```js
+for (let i = 0; i < 3; i++) {
+  console.log(`the current i is ${i}`)
+}
+// result:
+// the current i is 0
+// the current i is 1
+// the current i is 2
+```
+
+Let's examine the `for` statement part by part:
+| part        | Example                              | Description                                                                  |
+|-------------|--------------------------------------|------------------------------------------------------------------------------|
+| begin       | `let i = 0`                          | Execute once upon entering the loop                                          |
+| condition   | `i < 3`                              | Checked on every loop iteration, if `false` the loop stops.                  |
+| step        | `i ++`                               | Executes after the body on each iteration, but before the condition check.   |
+| body        | `console.log(the current i is ${i})` | Runs again and again while condition is `true`                               |
+
+***
+
+## Functions
+Quite often we need to perform a similar action in many places of the script.
+
+For example, we need to show a nice-looking message when a visitor logs in, logs out and maybe somewhere else.
+
+Functions are the main “building blocks” of the program. They allow the code to be called many times without repetition.
+
+### Function Declaration
+To create a function we can use a function declaration.
+
+Example:
+```js
+function logFirstName() {
+  console.log('first name is Jonathan')
+}
+```
+
+The function can be called by its name: `logFirstName()`
+
+Example:
+```js
+function logFirstName() {
+  console.log('first name is Jonathan')
+}
+
+logFirstName()
+// result: first name is Jonathan
+```
+
+### Parameters
+We can pass data to functions using parameters (also called function arguments).
+
+Example:
+```js
+function logFirstName(name) {
+  console.log(`first name is ${name}`)
+}
+
+logFirstName('Jonathan') // result: first name is Jonathan
+logFirstName('Vincent') // result: first name is Vincent
+```
+
+When the function is called, it will use its parameter values that was passed in.
+
+### Returning a value
+A function can return a value back into the calling code as the result.
+
+Example:
+```js
+function sum(a, b) {
+  return a + b;
+}
+
+let result = sum(1, 2);
+console.log(result) // result: 3
+```
