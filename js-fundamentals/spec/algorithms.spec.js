@@ -83,7 +83,7 @@ describe('Fibonacci', () => {
   test('fibonacci(10) to return 55', () => {
     expect(fibonacci(10)).toBe(55)
   })
-  test('fibonacci(10) to return 55', () => {
+  test('fibonacci(100) to return 354224848179262000000', () => {
     expect(fibonacci(100)).toBe(354224848179262000000)
   })
 })

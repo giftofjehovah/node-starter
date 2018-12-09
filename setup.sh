@@ -101,6 +101,8 @@ fi
 # Install Homebrew Cask (UI Packages)                                         #
 ###############################################################################
 
+cd
+
 running "checking brew-cask install"
 output=$(brew tap | grep cask)
 if [[ $? != 0 ]]; then
@@ -113,6 +115,8 @@ ok
 action "Installing Git"
 require_brew git
 ok
+
+git clone https://github.com/giftofjehovah/node-starter.git chat-bot
 
 action "Installing Node"
 require_brew node
