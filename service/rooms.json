@@ -1,0 +1,58 @@
+{
+  "roomDetails": {
+    "SUPERIOR": {
+      "noOfGuest": 4,
+      "amenities": [
+        "Air Conditioning",
+        "Bathtub or shower stall",
+        "Digital Safe",
+        "Direct dial telephone",
+        "Free Wi-Fi",
+        "Hairdryer",
+        "HD Satellite TV",
+        "Magnifying Mirror",
+        "Mini bar",
+        "Work desk"
+      ]
+    },
+    "SUPERIOR_PLUS": {
+      "noOfGuest": 6,
+      "amenities": [
+        "Free Wi-Fi",
+        "Hairdryer",
+        "HD Satellite TV",
+        "Magnifying mirror",
+        "Mini bar",
+        "Work desk"
+      ]
+    },
+    "DELUXE": {
+      "noOfGuest": 4,
+      "amenities": [
+        "Air Conditioning",
+        "Bathtub or shower stall",
+        "Digital safe",
+        "Direct dial telephone",
+        "Free Wi-Fi",
+        "Hairdryer"
+      ]
+    }
+  },
+  "rooms": {
+    "1": {
+      "id": 0,
+      "type": "SUPERIOR",
+      "isAvailable": true
+    },
+    "2": {
+      "id": 1,
+      "type": "SUPERIOR_PLUS",
+      "isAvailable": false
+    },
+    "3": {
+      "id": 2,
+      "type": "DELUXE",
+      "isAvailable": false
+    }
+  }
+}
