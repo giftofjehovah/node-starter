@@ -17,4 +17,4 @@ exports.getRoom = functions.https.onRequest((req, res) => {
   res.json({ messages: [{ text: 'Hi man' }] })
 })
 
-exports.hello = functions.https.onRequest((req, res) => res.send(`Hello World! :)`))
+exports.hello = functions.https.onRequest((req, res) => res.send(`Hello World!`))
