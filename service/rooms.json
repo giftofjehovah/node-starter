@@ -1,0 +1,123 @@
+{
+  "roomDetails": {
+    "SUPERIOR": {
+      "roomName": "Superior Room",
+      "noOfGuest": 4,
+      "amenities": [
+        "Air Conditioning",
+        "Bathtub or shower stall",
+        "Digital Safe",
+        "Direct dial telephone",
+        "Free Wi-Fi",
+        "Hairdryer",
+        "HD Satellite TV",
+        "Magnifying Mirror",
+        "Mini bar",
+        "Work desk"
+      ],
+      "description": "Elegantly designed in a contemporary style with large balcony doors leading to a balcony overlooking the hotel’s courtyard.\n\nFeaturing a double bed with eco-mattress"
+    },
+    "SUPERIOR_PLUS": {
+      "roomName": "Superior Plus Room",
+      "noOfGuest": 6,
+      "amenities": [
+        "Free Wi-Fi",
+        "Hairdryer",
+        "HD Satellite TV",
+        "Magnifying mirror",
+        "Mini bar",
+        "Work desk"
+      ],
+      "description": "Elegantly designed in a contemporary style with large balcony doors leading to a balcony overlooking the hotel’s courtyard.\n\nThe stylish bathroom includes walk-in shower or bathtub, direct dial phone, hairdryer, luxury cotton bathrobes and slippers and branded personal care products."
+    },
+    "DELUXE": {
+      "roomName": "Deluxe Room",
+      "noOfGuest": 4,
+      "amenities": [
+        "Air Conditioning",
+        "Bathtub or shower stall",
+        "Digital safe",
+        "Direct dial telephone",
+        "Free Wi-Fi",
+        "Hairdryer"
+      ],
+      "description": "Elegantly designed in a contemporary style with large balcony doors leading to a balcony overlooking the hotel’s courtyard.\n\nFeaturing a double bed with eco-mattress.\n\nThe stylish bathroom includes walk-in shower or bathtub, direct dial phone, hairdryer, luxury cotton bathrobes and slippers and branded personal care products."
+    }
+  },
+  "rooms": {
+    "0": {
+      "id": 0,
+      "type": "SUPERIOR",
+      "isAvailable": true,
+      "bookedBy": null
+    },
+    "1": {
+      "id": 1,
+      "type": "SUPERIOR",
+      "isAvailable": true,
+      "bookedBy": null
+    },
+    "2": {
+      "id": 2,
+      "type": "SUPERIOR_PLUS",
+      "isAvailable": false,
+      "bookedBy": 0
+    },
+    "3": {
+      "id": 3,
+      "type": "DELUXE",
+      "isAvailable": false,
+      "bookedBy": 1
+    },
+    "4": {
+      "id": 4,
+      "type": "SUPERIOR",
+      "isAvailable": true,
+      "bookedBy": null
+    },
+    "5": {
+      "id": 5,
+      "type": "SUPERIOR_PLUS",
+      "isAvailable": true,
+      "bookedBy": null
+    },
+    "6": {
+      "id": 6,
+      "type": "DELUXE",
+      "isAvailable": true,
+      "bookedBy": null
+    },
+    "7": {
+      "id": 7,
+      "type": "SUPERIOR",
+      "isAvailable": true,
+      "bookedBy": null
+    },
+    "8": {
+      "id": 8,
+      "type": "SUPERIOR_PLUS",
+      "isAvailable": true,
+      "bookedBy": null
+    },
+    "9": {
+      "id": 9,
+      "type": "DELUXE",
+      "isAvailable": true,
+      "bookedBy": null
+    }
+  },
+  "customers": {
+    "0": {
+      "id": 0,
+      "name": "Jonathan",
+      "email": "jon@gmail.com",
+      "phoneNo": "91234567"
+    },
+    "1": {
+      "id": 1,
+      "name": "Vincent",
+      "email": "vincent@gmail.com",
+      "phoneNo": "97654321"
+    }
+  }
+}
