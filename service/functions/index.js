@@ -1,20 +1,23 @@
 const functions = require('firebase-functions')
 const firebase = require('firebase-admin')
 
-const config = {
-  apiKey: 'AIzaSyAGoO96ia2-hRG20au-i3qIH23aiy8yvQ0',
-  authDomain: 'byob-chatbot.firebaseapp.com',
-  databaseURL: 'https://byob-chatbot.firebaseio.com'
-}
-firebase.initializeApp(config)
+firebase.initializeApp(functions.config().firebase)
 const db = firebase.database()
 
 exports.getRoom = functions.https.onRequest((req, res) => {
-  console.log(req.body)
-  db.ref('/rooms')
+  const roomSelected = req.body.viewRoomDetailSelected
+  db.ref(`/roomDetails/${roomSelected}`)
     .once('value')
-    .then(snapshot => console.log(snapshot.val()))
-  res.json({ messages: [{ text: 'Hi man' }] })
+    .then(snapshot => {
+      const roomDetails = snapshot.val()
+      const attributesToSet = {
+        noOfGuest: roomDetails.noOfGuest,
+        description: roomDetails.description,
+        amenities: roomDetails.amenities.join(', '),
+        roomName: roomDetails.roomName
+      }
+      res.json({ set_attributes: attributesToSet })
+    })
 })
 
 exports.hello = functions.https.onRequest((req, res) => res.send(`Hello World!`))
