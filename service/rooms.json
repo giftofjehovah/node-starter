@@ -1,6 +1,7 @@
 {
   "roomDetails": {
     "SUPERIOR": {
+      "roomName": "Superior Room",
       "noOfGuest": 4,
       "amenities": [
         "Air Conditioning",
@@ -17,6 +18,7 @@
       "description": "Elegantly designed in a contemporary style with large balcony doors leading to a balcony overlooking the hotel’s courtyard.\n\nFeaturing a double bed with eco-mattress"
     },
     "SUPERIOR_PLUS": {
+      "roomName": "Superior Plus Room",
       "noOfGuest": 6,
       "amenities": [
         "Free Wi-Fi",
@@ -29,6 +31,7 @@
       "description": "Elegantly designed in a contemporary style with large balcony doors leading to a balcony overlooking the hotel’s courtyard.\n\nThe stylish bathroom includes walk-in shower or bathtub, direct dial phone, hairdryer, luxury cotton bathrobes and slippers and branded personal care products."
     },
     "DELUXE": {
+      "roomName": "Deluxe Room",
       "noOfGuest": 4,
       "amenities": [
         "Air Conditioning",
