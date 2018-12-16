@@ -2,7 +2,7 @@ cd
 
 iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
 
-scoop add bucket extras
+scoop bucket add extras
 
 scoop install openssh git nodejs vscode gcloud
 
