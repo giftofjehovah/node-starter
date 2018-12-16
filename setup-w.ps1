@@ -1,4 +1,6 @@
-cd
+cd ~
+
+set-executionpolicy remotesigned
 
 iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
 
